@@ -21,7 +21,7 @@ export function Manual() {
 
             <div className="border-t-2 border-black dark:border-white my-4"></div>
 
-            <div className="grid grid-cols-2 gap-x-8 text-azulet dark:text-azulct">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 text-azulet dark:text-azulct">
          
                 <div className="flex flex-col gap-y-4">
                     <div>
@@ -55,7 +55,7 @@ export function Manual() {
             </div>
 
             <img
-                className="absolute bottom-[15%] right-0 w-[20%] h-[25%]"
+                className="hidden md:block absolute bottom-[15%] right-0 w-[20%] h-[25%]"
                 src={solonda}
                 alt="Imagem de onda no fundo"
             />

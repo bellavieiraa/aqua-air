@@ -23,8 +23,7 @@ export function Layout() {
         <div style={backgroundStyle} className="flex flex-col min-h-screen">
             <Header />
             <main className="flex justify-center items-start pb-12">
-        
-                <div className="w-[80%] h-[1000px] bg-[#EEFEFF] rounded-[50px] shadow-md m-12 dark:bg-[#4000B74F]">
+                <div className="w-[95%] md:w-[80%] bg-[#EEFEFF] rounded-[50px] shadow-md m-4 md:m-12 dark:bg-[#4000B74F]">
                     <Link to="/">
                     <img src={logo} alt="AquaAir logo" className="h-20 w-auto m-4" />
                     </Link>

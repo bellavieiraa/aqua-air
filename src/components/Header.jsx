@@ -35,9 +35,9 @@ export function Header() {
                 <div className="hidden md:flex justify-center items-center gap-12 w-full">
                     <nav>
                         <ul className="flex gap-12 items-center text-sky-800 dark:text-[060733] text-2xl font-bold">
-                            <li><Link to="/manual" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap">Manual</Link></li>
-                            <li><Link to="/product" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap">Product</Link></li>
-                            <li><Link to="/game" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap">Game</Link></li>
+                            <li><Link to="/manual" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap hover:bg-sky-700 hover:text-white dark:hover:bg-sky-500">Manual</Link></li>
+                            <li><Link to="/product" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap hover:bg-sky-700 hover:text-white dark:hover:bg-sky-500">Product</Link></li>
+                            <li><Link to="/game" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap hover:bg-sky-700 hover:text-white dark:hover:bg-sky-500">Game</Link></li>
                         </ul>
                     </nav>
                     <div>
@@ -48,8 +48,8 @@ export function Header() {
                     <div className="flex items-center gap-12">
                         <nav>
                             <ul className="flex gap-12 items-center text-sky-800 dark:text-[060733] text-2xl font-bold">
-                                <li><Link to="/aboutus" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap">About Us</Link></li>
-                                <li><Link to="/references" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap">References</Link></li>
+                                <li><Link to="/aboutus" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap hover:bg-sky-700 hover:text-white dark:hover:bg-sky-500">About Us</Link></li>
+                                <li><Link to="/references" className="border-2 border-sky-800 dark:border-[060733] rounded-[50px] px-4 py-2 whitespace-nowrap hover:bg-sky-700 hover:text-white dark:hover:bg-sky-500">References</Link></li>
                             </ul>
                         </nav>
                         <button onClick={toggleTheme} className="text-sky-800 dark:text-[060733]">
@@ -83,7 +83,7 @@ export function Header() {
                         <ul className="flex flex-col gap-6 items-center text-center">
                             {navLinks.map((link) => (
                                 <li key={link.to}>
-                                    <Link to={link.to} onClick={closeMenu} className="text-white text-2xl font-bold">
+                                    <Link to={link.to} onClick={closeMenu} className="text-white text-2xl font-bold hover:text-gray-300">
                                         {link.text}
                                     </Link>
                                 </li>
