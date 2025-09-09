@@ -5,6 +5,9 @@ import { useContext } from "react"
 import { ThemeContext } from "../context/ThemeContext.jsx"
 import fundoClaro from "../assets/fundoclaro.png"
 import fundoEscuro from "../assets/fundoescuro.png"
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+
 
 export function Layout() {
     const { theme } = useContext(ThemeContext)
@@ -19,8 +22,12 @@ export function Layout() {
     return (
         <div style={backgroundStyle} className="flex flex-col min-h-screen">
             <Header />
-            <main className="  flex justify-center items-start p-6">
-                <div className="w-[1522px] h-[850px] bg-[#EEFEFF] w-full  p-8 rounded-[50px] shadow-md m-14">
+            <main className="flex justify-center items-start pb-12">
+        
+                <div className="w-[80%] h-[1000px] bg-[#EEFEFF] rounded-[50px] shadow-md m-12 dark:bg-[#4000B74F]">
+                    <Link to="/">
+                    <img src={logo} alt="AquaAir logo" className="h-20 w-auto m-4" />
+                    </Link>
                     <Outlet />
                 </div>
             </main>

@@ -15,6 +15,8 @@
             colors: {
               azulc:"#D8F6FB",
               azule:"#009BA8",
+              azulet: "#30789B",
+              azulct: "#41BFD0",
             }
       
           },
